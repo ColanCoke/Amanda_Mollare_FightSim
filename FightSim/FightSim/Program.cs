@@ -28,30 +28,54 @@ namespace FightSim
 
             Console.WriteLine("YES! FIGHT.... START!!!!!!!!!!");
 
-            Console.ReadLine();
-
             while (F1.IsAlive() == true && F2.IsAlive() == true)
             {
+                F2.Hurt();
 
-                Console.WriteLine( " throws a punch!");
-                System.Threading.Thread.Sleep(1500);
-                Console.WriteLine("Hit! " + " did: " +  " amounts of damage!"); //berättar för spelaren hur mycket damage hen gjorde för rundan
-                System.Threading.Thread.Sleep(1500);
+                Console.WriteLine(F1.name + " throws a punch!");
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine("Hit!");
+                System.Threading.Thread.Sleep(1000);
 
-                Console.WriteLine( " has " +  " HP left!");
-                System.Threading.Thread.Sleep(1500);
+                Console.WriteLine(F2.name + " has " + F2.GetHp() + " HP left!");
+                System.Threading.Thread.Sleep(1000);
 
-                Console.WriteLine(" throws a punch!");
-                System.Threading.Thread.Sleep(1500);
-                Console.WriteLine("Hit! " + " did: " + " amounts of damage!"); //berättar för spelaren hur mycket damage hen gjorde för rundan
-                System.Threading.Thread.Sleep(1500);
+                if(F2.IsAlive() == false)
+                {
+                    break;
+                }
 
-                Console.WriteLine( " has " +  " HP left!");
-                System.Threading.Thread.Sleep(1500);
+                F1.Attack();
+                F1.Hurt();
+                     
+                Console.WriteLine(F2.name + " throws a punch!");
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine("Hit!"); //
+                System.Threading.Thread.Sleep(1000);
+
+                Console.WriteLine(F1.name + " has " + F1.GetHp() +  " HP left!");
+                System.Threading.Thread.Sleep(1000);
 
                 //gör en if-loop så HP inte kan bli under 0. typ if (hp < 0) "hp = 0;"
 
             }
+
+            Console.WriteLine("Wow! Great Match!");
+
+            if (F1.IsAlive() == false)
+            {
+
+                Console.WriteLine(F2.name + " won! They are the champion!");
+
+            }
+            else if (F2.IsAlive() == false)
+            {
+
+                Console.WriteLine(F1.name + " won! They are the champion!");
+
+            }
+
+            Console.ReadLine();
 
         }
     }

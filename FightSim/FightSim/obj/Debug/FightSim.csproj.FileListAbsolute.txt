@@ -4,3 +4,9 @@ C:\Users\amanda.mollare\documents\visual studio 2017\Projects\FightSim\FightSim\
 C:\Users\amanda.mollare\documents\visual studio 2017\Projects\FightSim\FightSim\obj\Debug\FightSim.csprojResolveAssemblyReference.cache
 C:\Users\amanda.mollare\documents\visual studio 2017\Projects\FightSim\FightSim\obj\Debug\FightSim.exe
 C:\Users\amanda.mollare\documents\visual studio 2017\Projects\FightSim\FightSim\obj\Debug\FightSim.pdb
+C:\Users\amanda.mollare\Documents\GitHub\Amanda_Mollare_FightSim\FightSim\FightSim\bin\Debug\FightSim.exe.config
+C:\Users\amanda.mollare\Documents\GitHub\Amanda_Mollare_FightSim\FightSim\FightSim\bin\Debug\FightSim.exe
+C:\Users\amanda.mollare\Documents\GitHub\Amanda_Mollare_FightSim\FightSim\FightSim\bin\Debug\FightSim.pdb
+C:\Users\amanda.mollare\Documents\GitHub\Amanda_Mollare_FightSim\FightSim\FightSim\obj\Debug\FightSim.csprojResolveAssemblyReference.cache
+C:\Users\amanda.mollare\Documents\GitHub\Amanda_Mollare_FightSim\FightSim\FightSim\obj\Debug\FightSim.exe
+C:\Users\amanda.mollare\Documents\GitHub\Amanda_Mollare_FightSim\FightSim\FightSim\obj\Debug\FightSim.pdb

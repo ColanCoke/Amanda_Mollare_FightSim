@@ -9,21 +9,21 @@ namespace FightSim
     class Fighter
     {
 
-        int hp;
+        int hp = 50;
 
         public string name;
 
-        Random genDmg;
+        Random genDmg = new Random();
 
         public int Attack()
         {
-            return genDmg.Next(1, 10);
+            return genDmg.Next(5, 15);
         }
 
-        public void Hurt(int amount)
+        public void Hurt()
         {
 
-            hp = hp - amount;
+            hp = hp - Attack();
 
             if(hp < 0)
             {
